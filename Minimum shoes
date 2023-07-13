@@ -1,0 +1,8 @@
+def calculate_extra_shoes(N, M):
+    total_shoes_required = 2 * N
+    right_shoes_needed = total_shoes_required - M
+    return right_shoes_needed
+N = int(input("enter the no of friends:"))
+M = int(input("enter the no of left shoes chef already has:"))
+extra_shoes = calculate_extra_shoes(N, M)
+print(f"The minimum number of extra shoes Chef needs to buy is: {extra_shoes}")
