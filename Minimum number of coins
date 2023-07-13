@@ -1,0 +1,10 @@
+T = int(input("Enter the number of test cases: "))
+for i in range(T):
+    X = int(input("Enter the value of X: "))
+    count = X // 10
+    if X % 10 == 0:
+        print(count)
+    elif X % 10 == 5:
+        print(count + 1)
+    else:
+        print(-1)
