@@ -1,0 +1,12 @@
+def cal_gross_sal(salary):
+    if salary < 1500:
+        hra = 0.1 * salary
+        da = 0.9 * salary
+    else:
+        hra = 500
+        da = 0.98 * salary
+    gross_sal= salary + hra + da
+    return gross_sal
+salary = float(input("Enter the employee's salary: "))
+gross_salary = cal_gross_sal(salary_input)
+print("The employee's gross salary is:", gross_salary)
